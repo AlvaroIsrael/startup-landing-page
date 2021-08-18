@@ -1,46 +1,91 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A simple startup landing page made using react.
 
-## Available Scripts
+<p>
+  <a href="#-technologies-used">Technologies Used</a> •
+  <a href="#-how-to-use">How To Use</a> •
+  <a href="#-contributing">Contributing</a> •
+  <a href="#-license">License</a>
+</p>
 
-In the project directory, you can run:
+<br/>
 
-### `yarn start`
+<p>Made with ❤️ by Alvaro Israel 👏🏻 <a href="https://www.linkedin.com/in/alvaroisraeldesenvolvedor/">Get in Touch!</a></p>
+<p>Hit the ⭐️ button if you like this project!</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</div>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br/>
 
-### `yarn test`
+## Preview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🏆 Technologies Used
 
-### `yarn build`
+- [Node.js](https://nodejs.org/en/) and [NPM](http://npmjs.com)
+- [React](https://github.com/facebook/react/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 💻 How to Use
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **Install system dependencies**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Install [Git](https://git-scm.com).
+- Install [Node.js](https://nodejs.org/en/download/).
 
-### `yarn eject`
+### **Clone**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+In your command line:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+$ git clone https://github.com/AlvaroIsrael/startup-landing-page.git
+$ cd startup-landing-page
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### **Frontend**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+# Go into frontend folder
+$ cd startup-landing-page
 
-## Learn More
+# Install dependencies
+$ yarn install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Run the app
+$ yarn start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
+
+Fork this repository - click [fork][].
+
+```bash
+# Create your feature branch:
+$ git checkout -b feature/myAwesomeFeature
+
+# Commit your changes:
+$ git commit -m 'feat: Added some new awesomeFeature'
+
+# Push to the branch:
+$ git push -u origin feature/myAwesomeFeature
+```
+
+Then go to [Pull Requests][] and make a new one.
+
+Resources:
+
+- Read more about commits in [conventional commits][].
+- Read more about how to open a Pull Request from [GitHub official documentation][].
+
+[fork]: https://github.com/AlvaroIsrael/startup-landing-page/fork
+
+[Pull Requests]: https://github.com/AlvaroIsrael/startup-landing-page/pulls
+
+[conventional commits]: https://www.conventionalcommits.org/en/v1.0.0/
+
+[GitHub official documentation]: https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
+
+## 📝 License
+
+This software is under MIT license. See [LICENSE](LICENSE.md) for more details.
