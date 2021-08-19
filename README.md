@@ -1,5 +1,4 @@
 <div align="center">
-
 > A simple startup landing page made using react.
 
 <p>
@@ -9,14 +8,9 @@
   <a href="#-license">License</a>
 </p>
 
-<br/>
-
 <p>Made with ❤️ by Alvaro Israel 👏🏻 <a href="https://www.linkedin.com/in/alvaroisraeldesenvolvedor/">Get in Touch!</a></p>
 <p>Hit the ⭐️ button if you like this project!</p>
-
 </div>
-
-<br/>
 
 ## Preview
 
