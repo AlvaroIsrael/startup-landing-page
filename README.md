@@ -82,4 +82,4 @@ Resources:
 
 ## 📝 License
 
-This software is under MIT license. See [LICENSE](LICENSE.md) for more details.
+This software is under GNU General Public License v3.0. See [LICENSE](LICENSE.md) for more details.
