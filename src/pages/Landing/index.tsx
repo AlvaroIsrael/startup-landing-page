@@ -1,21 +1,52 @@
 import React from 'react';
-import { ApplyButton, Button, Container, Header, Menu } from 'pages/Landing/styles';
+import {
+  About, AboutButton, AboutContent, AboutImage,
+  ApplyButton,
+  Button,
+  Container,
+  Header, HeaderContent,
+  HeaderMessage,
+  HeaderTitle,
+  Menu,
+  MenuContainer, Scroll,
+} from 'pages/Landing/styles';
+import ScrollDown from 'components/ScrollDown';
 
 const Landing: React.FC = () => {
   return (
     <Container>
       <Header>
-        <Menu>
-          <Button>Team</Button>
-          <Button>About us</Button>
-          <Button>Process</Button>
-          <Button active={true}>Startup</Button>
-          <Button>Explication</Button>
-          <Button>News</Button>
-          <Button>Contact</Button>
+        <MenuContainer>
+          <></>
+          <Menu>
+            <Button>Team</Button>
+            <Button>About us</Button>
+            <Button>Process</Button>
+            <Button active>Startup</Button>
+            <Button>Explication</Button>
+            <Button>News</Button>
+            <Button>Contact</Button>
+          </Menu>
           <ApplyButton>Apply</ApplyButton>
-        </Menu>
+        </MenuContainer>
+        <HeaderContent>
+          <HeaderTitle>Welcome to Website</HeaderTitle>
+          <HeaderMessage>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae tempus odio. Nam gravida
+            diam eros, non ultricies velit varius ut.</HeaderMessage>
+        </HeaderContent>
+        <Scroll><ScrollDown /></Scroll>
       </Header>
+      <About>
+        <AboutImage />
+        <AboutContent>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt convallis dignissim. Integer
+          convallis diam tortor, a blandit quam dignissim sed. Maecenas semper lobortis enim quis tincidunt. Donec quis
+          ultrices orci. Suspendisse rutrum sapien ac lobortis suscipit. Nullam pellentesque fringilla est, in efficitur
+          nisl porta eu. Donec elementum condimentum sem non bibendum.n pellentesque dolor sit amet nisi lacinia
+          euismod. Mauris elementum turpis sem, ut laoreet purus porta ut. Suspendisse posuere purus id nunc eleifend,
+          id condimentum nulla tempus. Donec tortor sem, efficitur a laoreet ut, lacinia ac ante
+        </AboutContent>
+        <AboutButton>Discover Us</AboutButton>
+      </About>
     </Container>
   );
 };

@@ -11,6 +11,7 @@ export default createGlobalStyle`
   body {
     background: #FFFFFF;
     color: #818182;
+    overflow-x:hidden;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -25,5 +26,10 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+  }
+
+  ::selection {
+    color: #ffffff;
+    background-color: rgba(235, 91, 73, 1);
   }
 `;
