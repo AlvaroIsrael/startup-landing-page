@@ -8,7 +8,9 @@ import {
   HeaderMessage,
   HeaderTitle,
   Menu,
-  MenuContainer, Scroll,
+  MenuContainer, Scroll, TeamContent,
+  Team, TeamTitle, TeamMessage, TeamMemberLeft, TeamMemberRight, IconMemberLeft,
+  IconMemberRight,
 } from 'pages/Landing/styles';
 import ScrollDown from 'components/ScrollDown';
 
@@ -47,6 +49,30 @@ const Landing: React.FC = () => {
         </AboutContent>
         <AboutButton>Discover Us</AboutButton>
       </About>
+      <Team>
+        <TeamContent>
+          <TeamTitle>Team</TeamTitle>
+          <TeamMessage>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae tempus odio. Nam gravida
+            diam eros, non ultricies velit
+            varius ut.</TeamMessage>
+          <IconMemberLeft />
+          <TeamMemberLeft>
+            <p>Member 1</p>
+            <p>In pellentesque dolor sit amet nisi lacinia euismod. Mauris elementum turpis sem, ut laoreet purus porta
+              ut. Suspendisse posuere purus id nunc eleifend, id condimentum nulla tempus. Donec tortor sem, efficitur a
+              laoreet ut, lacinia ac ante. Nullam vel neque suscipit, pulvinar arcu vel, interdum enim.</p>
+            <AboutButton>Discover Member</AboutButton>
+          </TeamMemberLeft>
+          <IconMemberRight />
+          <TeamMemberRight>
+            <p>Member 2</p>
+            <p>In pellentesque dolor sit amet nisi lacinia euismod. Mauris elementum turpis sem, ut laoreet purus porta
+              ut. Suspendisse posuere purus id nunc eleifend, id condimentum nulla tempus. Donec tortor sem, efficitur a
+              laoreet ut, lacinia ac ante. Nullam vel neque suscipit, pulvinar arcu vel, interdum enim.</p>
+            <AboutButton>Discover Member</AboutButton>
+          </TeamMemberRight>
+        </TeamContent>
+      </Team>
     </Container>
   );
 };

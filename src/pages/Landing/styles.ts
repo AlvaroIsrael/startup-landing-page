@@ -4,6 +4,11 @@ import rightGraphics from 'assets/headerRightGraphics.svg';
 import aboutImage from 'assets/aboutImage.svg';
 import aboutBigBlueCircle from 'assets/aboutBigBlueCircle.svg';
 import aboutSmallCircle from 'assets/aboutSmallCircle.svg';
+import memberLeft from 'assets/memberLeft.svg';
+import memberRight from 'assets/memberRight.svg';
+import teamSmallBlackCircle from 'assets/teamSmallBlackCircle.svg';
+import teamSmallBlueCircle from 'assets/teamSmallBlueCircle.svg';
+import teamBigOrangeCircle from 'assets/teamBigOrangeCircle.svg';
 
 export const Container = styled.div`
   height: 100vh;
@@ -56,7 +61,6 @@ export const Header = styled.div`
     z-index: -1;
   }
 `;
-
 
 export const MenuContainer = styled.div`
   grid-area: menu;
@@ -163,7 +167,6 @@ export const Scroll = styled.div`
   place-self: center;
 `;
 
-
 export const About = styled.div`
   grid-area: about;
   height: 100vh;
@@ -176,11 +179,11 @@ export const About = styled.div`
   :before {
     content: "";
     position: absolute;
-    width: 187px;
-    height: 187px;
-    top: 1520px;
-    left: -115px;
-    background: url(${aboutBigBlueCircle}) center no-repeat;
+    width: 36px;
+    height: 36px;
+    top: 2200px;
+    left: 120px;
+    background: url(${teamSmallBlueCircle}) center no-repeat;
   }
 
   :after {
@@ -188,9 +191,9 @@ export const About = styled.div`
     position: absolute;
     width: 28px;
     height: 28px;
-    bottom: -300px;
-    right: 150px;
-    background: url(${aboutSmallCircle}) center no-repeat;
+    bottom: -1330px;
+    right: 100px;
+    background: url(${teamSmallBlackCircle}) center no-repeat;
   }
 `;
 
@@ -243,7 +246,174 @@ export const AboutButton = styled.button`
   border-radius: 15px;
 `;
 
-export const Team = styled.div``;
+export const Team = styled.div`
+  grid-area: team;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'team-content';
+`;
+
+export const TeamContent = styled.div`
+  grid-area: team-content;
+  place-self: center;
+
+  width: 1145px;
+  height: 595px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'team-title team-title team-title team-title'
+    'team-message team-message team-message team-message'
+    'icon-member1 team-member1 icon-member2 team-member2';
+`;
+
+export const TeamTitle = styled.div`
+  grid-area: team-title;
+
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: center;
+
+  color: #020202;
+
+  :before {
+    content: "";
+    position: absolute;
+    width: 187px;
+    height: 187px;
+    top: 1520px;
+    left: -115px;
+    background: url(${aboutBigBlueCircle}) center no-repeat;
+  }
+
+  :after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    bottom: -300px;
+    right: 150px;
+    background: url(${aboutSmallCircle}) center no-repeat;
+  }
+`;
+
+export const TeamMessage = styled.div`
+  grid-area: team-message;
+  
+  margin-top: 30px;
+
+  place-self: center;
+  width: 588px;
+  height: 105px;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0;
+  text-align: center;
+
+  color: #818182;
+
+  :after {
+    content: "";
+    position: absolute;
+    width: 187px;
+    height: 187px;
+    bottom: -1330px;
+    right: -140px;
+    background: url(${teamBigOrangeCircle}) center no-repeat;
+`;
+
+export const IconMemberLeft = styled.div`
+  grid-area: icon-member1;
+  margin-top: 110px;
+
+  justify-self: center;
+  align-self: start;
+  width: 160px;
+  height: 165px;
+  background: url(${memberLeft}) center no-repeat;
+`;
+
+export const IconMemberRight = styled.div`
+  grid-area: icon-member2;
+  margin-top: 110px;
+
+  justify-self: center;
+  align-self: start;
+  width: 160px;
+  height: 165px;
+  background: url(${memberRight}) center no-repeat;
+`;
+
+export const TeamMemberLeft = styled.div`
+  grid-area: team-member1;
+  width: 360px;
+  margin-top: 110px;
+
+  p:first-child {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0;
+    text-align: left;
+
+    color: #EB5B49;
+  }
+
+  p:nth-child(2) {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: left;
+
+    color: #818182;
+
+    margin-bottom: 50px;
+  }
+`;
+
+export const TeamMemberRight = styled.div`
+  grid-area: team-member2;
+  width: 360px;
+  margin-top: 110px;
+
+  p:first-child {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0;
+    text-align: left;
+
+    color: #EB5B49;
+  }
+
+  p:nth-child(2) {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: left;
+
+    color: #818182;
+
+    margin-bottom: 50px;
+  }
+`;
+
 
 export const Process = styled.div``;
 
